@@ -4,7 +4,7 @@ A signal flashes across nine nodes. Then the whole board turns a quarter, and yo
 
 ## Play
 
-https://dhellss.github.io/handshake/
+https://dhellss.github.io/handshake
 
 ## Rules
 
