@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>handshake</title>
+<meta name="description" content="Repeat the signal after the board turns. A memory game that refuses to stay still.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">~/ dhellskiee : <span>./handshake</span></div>
+  <div class="brand dim" id="v-lives">life life life</div>
+</header>
+
+<main class="app">
+  <div class="hud">
+    <div class="stat"><span class="k">round</span><span class="v" id="v-round">1</span></div>
+    <div class="stat"><span class="k">score</span><span class="v" id="v-score">0</span></div>
+    <div class="stat"><span class="k">best round</span><span class="v" id="v-best">0</span></div>
+  </div>
+
+  <p class="state" id="state">watch the signal</p>
+
+  <div class="boardwrap">
+    <div class="board" id="board">
+      <div class="notch"></div>
+    </div>
+    <div class="overlay" id="overlay">
+      <div class="card" id="card">
+        <h1>handshake</h1>
+        <p>A signal flashes across nine nodes. Then the whole board turns a quarter, and you repeat it.</p>
+        <ul class="rules">
+          <li>The nodes are blank, so the only thing that moves is the board.</li>
+          <li>The notch in the corner tells you which way it turned.</li>
+          <li>Repeat the same nodes in their new places. Three lives.</li>
+        </ul>
+        <button class="btn" id="go" type="button">Start</button>
+      </div>
+    </div>
+  </div>
+
+  <p class="hint">click or tap the nodes in order</p>
+</main>
+<footer class="foot">dhellmar mahilum — malupet na hacker</footer>
+<script src="script.js"></script>
+</body>
+</html>
